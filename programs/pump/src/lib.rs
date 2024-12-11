@@ -8,10 +8,10 @@ pub mod consts;
 
 use crate::instructions::*;
 
-declare_id!("4ApE7G2exs1uesqe8Kw1TwBDrgS1NSQ5JVmhswdkMg6H");
+declare_id!("5EKkfU7mvHHeD6ABq2Ep2ztMKHUfaSfyqmwRDNswuM2T");
 
 #[program]
-pub mod bonding_curve {
+pub mod pump {
     use super::*;
 
     pub fn initialize(ctx: Context<InitializeCurveConfiguration>, fee: f64) -> Result<()> {
