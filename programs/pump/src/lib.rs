@@ -39,6 +39,10 @@ pub mod pump {
     pub fn sell(ctx: Context<Sell>, amount: u64, bump: u8) -> Result<()> {
         instructions::sell(ctx, amount, bump)
     }
+
+    pub fn raydium_initialize(ctx: Context<RaydiumInitialize>, init_amount_0: u64, init_amount_1: u64, open_time: u64) -> Result<()> {
+        instructions::raydium_initialize(ctx, init_amount_0, init_amount_1, open_time)
+    }
     
 }
 
